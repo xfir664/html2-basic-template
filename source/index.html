@@ -177,7 +177,168 @@
         </ul>
       </section>
       <section class="catalog" data-test="catalog">
-
+        <h2 class="catalog__title">Каталог</h2>
+        <h3 class="catalog__subtitle">Каталог кофейных напитков</h3>
+        <form class="filter-form" action="#" method="post">
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__title">Цена</legend>
+            <div class="filter-form__price-rangebar"></div>
+            <label class="filter-form__price filter-form__min-price">
+              <span class="visually-hidden">Минимальная цена</span>
+              <input type="number">
+            </label>
+            <label class="filter-form__price filter-form__max-price">
+              <span class="visually-hidden">Максимальная цена</span>
+              <input type="number">
+            </label>
+          </fieldset>
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__title">Наличие молока</legend>
+            <ul class="filter-form__radio-list">
+              <li class="filter-form__radio-item">
+                <label class="filter-form__radio-button filter-form__radio-button--active">
+                  <input type="radio" name="radio-input" id="no-matter" value="Неважно">
+                  <span>Неважно</span>
+                </label>
+              </li>
+              <li class="filter-form__radio-item">
+                <label class="filter-form__radio-button">
+                  <input type="radio" name="radio-input" id="animal" value="Только животное">
+                  <span>Только животное</span>
+                </label>
+              </li>
+              <li class="filter-form__radio-item">
+                <label class="filter-form__radio-button">
+                  <input type="radio" name="radio-input" id="vegetable" value="Только растительное">
+                  <span>Только растительноее</span>
+                </label>
+              </li>
+              <li class="filter-form__radio-item">
+                <label class="filter-form__radio-button">
+                  <input type="radio" name="radio-input" id="no-milk" value="Без молока">
+                  <span>Без молока</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__title">Страна произрастания</legend>
+            <ul class="filter-form__chekbox-list">
+              <li class="filter-form__chekbox-item">
+                <label class="filter-form__chekbox-button">
+                  <input type="checkbox" id="brazil" value="Бразилия">
+                  <span>Бразилия</span>
+                </label>
+              </li>
+              <li class="filter-form__chekbox-item">
+                <label class="filter-form__chekbox-button">
+                  <input type="checkbox" id="ethiopia" value="Эфиопия">
+                  <span>Эфиопия</span>
+                </label>
+              </li>
+              <li class="filter-form__chekbox-item">
+                <label class="filter-form__chekbox-button">
+                  <input type="checkbox" id="сolombia" value="Колумбия">
+                  <span>Колумбия</span>
+                </label>
+              </li>
+              <li class="filter-form__chekbox-item">
+                <label class="filter-form__chekbox-button">
+                  <input type="checkbox" id="costa-riсa" value="Коста-Рика">
+                  <span>Коста-Рика</span>
+                </label>
+              </li>
+              <li class="filter-form__chekbox-item">
+                <label class="filter-form__chekbox-button">
+                  <input type="checkbox" id="peru" value="Перу">
+                  <span>Перу</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="filter-form__submit-button" type="button">Применить</button>
+          <button class="filter-form__reset-button" type="reset">Сбросить</button>
+        </form>
+        <label class="catalog__sortire">
+          <select id="sortire" name="sortire">
+            <option value="default">По умолчанию</option>
+            <option value="up-price">По возрастанию цены</option>
+            <option value="down-price">По убыванию цены</option>
+          </select>
+        </label>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              <img src="#" alt="Декаф Флэт Уайт">
+              <h3 class="catalog__product-title">Декаф Флэт Уайт</h3>
+            <p class="catalog__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+            <span class="catalog__product-price">225₽</span>
+            <button class="catalog__product-buy" type="button">В корзину</button>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              <img src="#" alt="Декаф Флэт Уайт">
+              <h3 class="catalog__product-title">Декаф Флэт Уайт</h3>
+            <p class="catalog__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+            <span class="catalog__product-price">225₽</span>
+            <button class="catalog__product-buy" type="button">В корзину</button>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              <img src="#" alt="Декаф Флэт Уайт">
+              <h3 class="catalog__product-title">Декаф Флэт Уайт</h3>
+            <p class="catalog__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+            <span class="catalog__product-price">225₽</span>
+            <button class="catalog__product-buy" type="button">В корзину</button>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              <img src="#" alt="Декаф Флэт Уайт">
+              <h3 class="catalog__product-title">Декаф Флэт Уайт</h3>
+            <p class="catalog__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+            <span class="catalog__product-price">225₽</span>
+            <button class="catalog__product-buy" type="button">В корзину</button>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              <img src="#" alt="Декаф Флэт Уайт">
+              <h3 class="catalog__product-title">Декаф Флэт Уайт</h3>
+            <p class="catalog__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+            <span class="catalog__product-price">225₽</span>
+            <button class="catalog__product-buy" type="button">В корзину</button>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              <img src="#" alt="Декаф Флэт Уайт">
+              <h3 class="catalog__product-title">Декаф Флэт Уайт</h3>
+            <p class="catalog__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+            <span class="catalog__product-price">225₽</span>
+            <button class="catalog__product-buy" type="button">В корзину</button>
+            </a>
+          </li>
+        </ul>
+        <ul class="catalog__pagination-list">
+          <li class="catalog__pagination-item">
+            <button class="catalog__pagination-button catalog__pagination-button--prev"></button>
+          </li>
+          <li class="catalog__pagination-item">
+            <button class="catalog__pagination-button">1</button>
+          </li>
+          <li class="catalog__pagination-item">
+            <button class="catalog__pagination-button catalog__pagination-button--active">2</button>
+          </li>
+          <li class="catalog__pagination-item">
+            <button class="catalog__pagination-button">3</button>
+          </li>
+          <li class="catalog__pagination-item">
+            <button class="catalog__pagination-button catalog__pagination-button--next"></button>
+          </li>
+        </ul>
       </section>
       <section class="map" data-test="map">
         <img src="" alt="Карта">
