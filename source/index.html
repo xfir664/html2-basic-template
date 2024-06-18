@@ -64,7 +64,88 @@
     </header>
     <main class="main-content">
       <h1 class="visually-hidden">Главная страница сайта Drink 2 go.</h1>
-      <section class="hero" data-test="hero"></section>
+      <section class="hero" data-test="hero">
+        <button class="hero__slide-button-prev" type="button">
+          <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
+        <button class="hero__slide-button-next" type="button">
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
+        <section class="hero__slider hero__slide-1">
+          <h2 class="hero__title">Новинка</h2>
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="images/promo-images/promo-image-desktop@1x.webp, images/promo-images/promo-image-desktop@2x.webp 2x" width="600" height="600">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/promo-images/promo-image-tablet@1x.webp, images/promo-images/promo-image-tablet@2x.webp 2x" width="476" height="476">
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/promo-images/promo-image-desktop@1x.png, images/promo-images/promo-image-desktop@2x.png 2x" width="600" height="600">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/promo-images/promo-image-tablet@1x.png, images/promo-images/promo-image-tablet@2x.png 2x" width="476" height="476">
+            <img class="promo__image" src="images/promo-images/promo-image-mobile@1x.png" srcset="images/promo-images/promo-image-mobile@2x.png 2x" width="280" height="280" alt="Декаф флэт уайт.">
+          </picture>
+          <h3 class="hero__product-title">Декаф Флэт Уайт</h3>
+          <p class="hero__product-description">
+            Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня
+          </p>
+          <p class="hero__price-container">
+            <span class="hero__old-price">295₽</span>
+            <span class="hero__new-price">225₽</span>
+            <button class="hero__byu-buuton">Заказать</button>
+          </p>
+        </section>
+        <section class="hero__slider hero__slide-2">
+          <h2 class="hero__title">Новинка</h2>
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="images/promo-images/promo-image-desktop@1x.webp, images/promo-images/promo-image-desktop@2x.webp 2x" width="600" height="600">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/promo-images/promo-image-tablet@1x.webp, images/promo-images/promo-image-tablet@2x.webp 2x" width="476" height="476">
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/promo-images/promo-image-desktop@1x.png, images/promo-images/promo-image-desktop@2x.png 2x" width="600" height="600">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/promo-images/promo-image-tablet@1x.png, images/promo-images/promo-image-tablet@2x.png 2x" width="476" height="476">
+            <img class="promo__image" src="images/promo-images/promo-image-mobile@1x.png" srcset="images/promo-images/promo-image-mobile@2x.png 2x" width="280" height="280" alt="Лавандовый Латте.">
+          </picture>
+          <h3 class="hero__product-title">Лавандовый Латте</h3>
+          <p class="hero__product-description">
+            Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
+          </p>
+          <p class="hero__price-container">
+            <span class="hero__old-price">285₽</span>
+            <span class="hero__new-price">265₽</span>
+            <button class="hero__byu-buuton">Заказать</button>
+          </p>
+        </section>
+        <section class="hero__slider hero__slide-3">
+          <h2 class="hero__title">Новинка</h2>
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="images/promo-images/promo-image-desktop@1x.webp, images/promo-images/promo-image-desktop@2x.webp 2x" width="600" height="600">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/promo-images/promo-image-tablet@1x.webp, images/promo-images/promo-image-tablet@2x.webp 2x" width="476" height="476">
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/promo-images/promo-image-desktop@1x.png, images/promo-images/promo-image-desktop@2x.png 2x" width="600" height="600">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/promo-images/promo-image-tablet@1x.png, images/promo-images/promo-image-tablet@2x.png 2x" width="476" height="476">
+            <img class="promo__image" src="images/promo-images/promo-image-mobile@1x.png" srcset="images/promo-images/promo-image-mobile@2x.png 2x" width="280" height="280" alt="Тройной Эспрессо.">
+          </picture>
+          <h3 class="hero__product-title">Тройной Эспрессо</h3>
+          <p class="hero__product-description">
+            Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
+          </p>
+          <p class="hero__price-container">
+            <span class="hero__old-price">395₽</span>
+            <span class="hero__new-price">275₽</span>
+            <button class="hero__byu-buuton">Заказать</button>
+          </p>
+        </section>
+        <ul class="hero__slider-pagination-list">
+          <li class="hero__slider-pagination-item">
+            <button class="hero__slide-pagination-button hero__slide-pagination-button--active" type="button">
+              <span class="visually-hidden">Кнопка пагинации</span>
+            </button>
+          </li>
+          <li class="hero__slider-pagination-item">
+            <button class="hero__slide-pagination-button" type="button">
+              <span class="visually-hidden">Кнопка пагинации</span>
+            </button>
+          </li>
+          <li class="hero__slider-pagination-item">
+            <button class="hero__slide-pagination-button" type="button">
+              <span class="visually-hidden">Кнопка пагинации</span>
+            </button>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer class="main-footer">
 
