@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название проекта</title>
+    <title>Drink2Go главная</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="preload" href="#" type="font/woff2" as="font">
     <link rel="stylesheet" href="styles/styles.css">
@@ -12,10 +12,11 @@
     <header class="main-header" data-test="header">
       <nav class="main-navigation">
         <a class="main-navigation__logo-link" href="#" aria-current="true">
-          <img class="main-navigation__logo-image" src="#" width="32" height="36" alt="Логотип Drink 2 go." aria-hidden="true">
-          <span class="visually-hidden" aria-hidden="true">
-            Логотип сайта Drink 2 go.
-          </span>
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/d2g-logo-long.svg" width="170" height="36">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/d2g-logo-short.svg" width="82" height="36">
+            <img class="main-navigation__logo-image" src="images/logo/d2g-logo-icon.svg" width="32" height="36" alt="Логотип сайта.">
+          </picture>
         </a>
         <ul class="main-navigation__icon-list icon-list">
           <li class="icon-list__item">
@@ -74,11 +75,11 @@
         <section class="hero__slider hero__slide-1">
           <h2 class="hero__title">Новинка</h2>
           <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="images/promo-images/promo-image-desktop@1x.webp, images/promo-images/promo-image-desktop@2x.webp 2x" width="600" height="600">
-            <source type="image/webp" media="(min-width: 768px)" srcset="images/promo-images/promo-image-tablet@1x.webp, images/promo-images/promo-image-tablet@2x.webp 2x" width="476" height="476">
-            <source type="image/png" media="(min-width: 1440px)" srcset="images/promo-images/promo-image-desktop@1x.png, images/promo-images/promo-image-desktop@2x.png 2x" width="600" height="600">
-            <source type="image/png" media="(min-width: 768px)" srcset="images/promo-images/promo-image-tablet@1x.png, images/promo-images/promo-image-tablet@2x.png 2x" width="476" height="476">
-            <img class="promo__image" src="images/promo-images/promo-image-mobile@1x.png" srcset="images/promo-images/promo-image-mobile@2x.png 2x" width="280" height="280" alt="Декаф флэт уайт.">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="images/hero-slider/slide-1-desktop@1x.webp, images/hero-slider/slide-1-desktop@2x.webp 2x" width="600" height="600">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/hero-slider/slide-1-tablet@1x.webp, images/hero-slider/slide-1-tablet@2x.webp 2x" width="476" height="476">
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/hero-slider/slide-1-desktop@1x.png, images/hero-sliders/slide-1-desktop@2x.png 2x" width="600" height="600">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/hero-slider/slide-1-tablet@1x.png, images/hero-slider/slide-1-tablet@2x.png 2x" width="476" height="476">
+            <img class="hero__slide-image" src="images/hero-slider/slide-1-mobile@1x.png" srcset="images/hero-slider/slide-1-mobile@2x.png 2x" width="280" height="280" alt="Декаф флэт уайт.">
           </picture>
           <h3 class="hero__product-title">Декаф Флэт Уайт</h3>
           <p class="hero__product-description">
@@ -93,11 +94,11 @@
         <section class="hero__slider hero__slide-2">
           <h2 class="hero__title">Новинка</h2>
           <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="images/promo-images/promo-image-desktop@1x.webp, images/promo-images/promo-image-desktop@2x.webp 2x" width="600" height="600">
-            <source type="image/webp" media="(min-width: 768px)" srcset="images/promo-images/promo-image-tablet@1x.webp, images/promo-images/promo-image-tablet@2x.webp 2x" width="476" height="476">
-            <source type="image/png" media="(min-width: 1440px)" srcset="images/promo-images/promo-image-desktop@1x.png, images/promo-images/promo-image-desktop@2x.png 2x" width="600" height="600">
-            <source type="image/png" media="(min-width: 768px)" srcset="images/promo-images/promo-image-tablet@1x.png, images/promo-images/promo-image-tablet@2x.png 2x" width="476" height="476">
-            <img class="promo__image" src="images/promo-images/promo-image-mobile@1x.png" srcset="images/promo-images/promo-image-mobile@2x.png 2x" width="280" height="280" alt="Лавандовый Латте.">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="images/hero-slider/slide-2-desktop@1x.webp, images/hero-slider/slide-2-desktop@2x.webp 2x" width="600" height="600">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/hero-slider/slide-2-tablet@1x.webp, images/hero-slider/slide-2-tablet@2x.webp 2x" width="476" height="476">
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/hero-slider/slide-2-desktop@1x.png, images/hero-sliders/slide-2-desktop@2x.png 2x" width="600" height="600">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/hero-slider/slide-2-tablet@1x.png, images/hero-slider/slide-2-tablet@2x.png 2x" width="476" height="476">
+            <img class="hero__slide-image" src="images/hero-slider/slide-2-mobile@1x.png" srcset="images/hero-slider/slide-2-mobile@2x.png 2x" width="280" height="280" alt="Лавандовый Латте.">
           </picture>
           <h3 class="hero__product-title">Лавандовый Латте</h3>
           <p class="hero__product-description">
@@ -112,11 +113,11 @@
         <section class="hero__slider hero__slide-3">
           <h2 class="hero__title">Новинка</h2>
           <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="images/promo-images/promo-image-desktop@1x.webp, images/promo-images/promo-image-desktop@2x.webp 2x" width="600" height="600">
-            <source type="image/webp" media="(min-width: 768px)" srcset="images/promo-images/promo-image-tablet@1x.webp, images/promo-images/promo-image-tablet@2x.webp 2x" width="476" height="476">
-            <source type="image/png" media="(min-width: 1440px)" srcset="images/promo-images/promo-image-desktop@1x.png, images/promo-images/promo-image-desktop@2x.png 2x" width="600" height="600">
-            <source type="image/png" media="(min-width: 768px)" srcset="images/promo-images/promo-image-tablet@1x.png, images/promo-images/promo-image-tablet@2x.png 2x" width="476" height="476">
-            <img class="promo__image" src="images/promo-images/promo-image-mobile@1x.png" srcset="images/promo-images/promo-image-mobile@2x.png 2x" width="280" height="280" alt="Тройной Эспрессо.">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="images/hero-slider/slide-3-desktop@1x.webp, images/hero-slider/slide-3-desktop@2x.webp 2x" width="600" height="600">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/hero-slider/slide-3-tablet@1x.webp, images/hero-slider/slide-3-tablet@2x.webp 2x" width="476" height="476">
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/hero-slider/slide-3-desktop@1x.png, images/hero-sliders/slide-3-desktop@2x.png 2x" width="600" height="600">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/hero-slider/slide-3-tablet@1x.png, images/hero-slider/slide-3-tablet@2x.png 2x" width="476" height="476">
+            <img class="hero__slide-image" src="images/hero-slider/slide-3-mobile@1x.png" srcset="images/hero-slider/slide-3-mobile@2x.png 2x" width="280" height="280" alt="Лавандовый Латте.">
           </picture>
           <h3 class="hero__product-title">Тройной Эспрессо</h3>
           <p class="hero__product-description">
@@ -269,7 +270,10 @@
         <ul class="catalog__list">
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img src="#" alt="Декаф Флэт Уайт">
+              <picture>
+                <source type="image/webp" srcset="images/catalog/coffee-can-1@1x.webp, images/catalog/coffee-can-1@2x.webp 2x" width="130" height="188">
+                <img src="images/catalog/coffee-can-1@1x.png" srcset="images/catalog/coffee-can-1@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
+              </picture>
               <h3 class="catalog__product-title">Декаф Флэт Уайт</h3>
             <p class="catalog__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
             <span class="catalog__product-price">225₽</span>
@@ -278,7 +282,10 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img src="#" alt="Декаф Флэт Уайт">
+              <picture>
+                <source type="image/webp" srcset="images/catalog/coffee-can-2@1x.webp, images/catalog/coffee-can-2@2x.webp 2x" width="130" height="188">
+                <img src="images/catalog/coffee-can-2@1x.png" srcset="images/catalog/coffee-can-2@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
+              </picture>
               <h3 class="catalog__product-title">Декаф Флэт Уайт</h3>
             <p class="catalog__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
             <span class="catalog__product-price">225₽</span>
@@ -287,7 +294,10 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img src="#" alt="Декаф Флэт Уайт">
+              <picture>
+                <source type="image/webp" srcset="images/catalog/coffee-can-3@1x.webp, images/catalog/coffee-can-3@2x.webp 2x" width="130" height="188">
+                <img src="images/catalog/coffee-can-3@1x.png" srcset="images/catalog/coffee-can-3@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
+              </picture>
               <h3 class="catalog__product-title">Декаф Флэт Уайт</h3>
             <p class="catalog__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
             <span class="catalog__product-price">225₽</span>
@@ -296,7 +306,10 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img src="#" alt="Декаф Флэт Уайт">
+              <picture>
+                <source type="image/webp" srcset="images/catalog/coffee-can-4@1x.webp, images/catalog/coffee-can-4@2x.webp 2x" width="130" height="188">
+                <img src="images/catalog/coffee-can-4@1x.png" srcset="images/catalog/coffee-can-4@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
+              </picture>
               <h3 class="catalog__product-title">Декаф Флэт Уайт</h3>
             <p class="catalog__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
             <span class="catalog__product-price">225₽</span>
@@ -305,7 +318,10 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img src="#" alt="Декаф Флэт Уайт">
+              <picture>
+                <source type="image/webp" srcset="images/catalog/coffee-can-5@1x.webp, images/catalog/coffee-can-5@2x.webp 2x" width="130" height="188">
+                <img src="images/catalog/coffee-can-5@1x.png" srcset="images/catalog/coffee-can-5@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
+              </picture>
               <h3 class="catalog__product-title">Декаф Флэт Уайт</h3>
             <p class="catalog__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
             <span class="catalog__product-price">225₽</span>
@@ -314,7 +330,10 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img src="#" alt="Декаф Флэт Уайт">
+              <picture>
+                <source type="image/webp" srcset="images/catalog/coffee-can-6@1x.webp, images/catalog/coffee-can-6@2x.webp 2x" width="130" height="188">
+                <img src="images/catalog/coffee-can-6@1x.png" srcset="images/catalog/coffee-can-6@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
+              </picture>
               <h3 class="catalog__product-title">Декаф Флэт Уайт</h3>
             <p class="catalog__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
             <span class="catalog__product-price">225₽</span>
@@ -324,7 +343,7 @@
         </ul>
         <ul class="catalog__pagination-list">
           <li class="catalog__pagination-item">
-            <button class="catalog__pagination-button catalog__pagination-button--prev"></button>
+            <button class="catalog__pagination-button catalog__pagination-button--prev"><span class="catalog__pagination-button-text">Назад</span></button>
           </li>
           <li class="catalog__pagination-item">
             <button class="catalog__pagination-button">1</button>
@@ -336,12 +355,18 @@
             <button class="catalog__pagination-button">3</button>
           </li>
           <li class="catalog__pagination-item">
-            <button class="catalog__pagination-button catalog__pagination-button--next"></button>
+            <button class="catalog__pagination-button catalog__pagination-button--next"><span class="catalog__pagination-button-text">Вперед</span></button>
           </li>
         </ul>
       </section>
       <section class="map" data-test="map">
-        <img src="" alt="Карта">
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.webp, images/map/map-desktop@2x.webp 2x" width="1440" height="540">
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.webp, images/map/map-tablet@2x.webp 2x" width="768" height="480">
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.png, images/map/map-desktop@2x.png 2x" width="1440" height="540">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.png, images/map/map-tablet@2x.png 2x" width="768" height="480">
+          <img class="map__image" src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="420" alt="Лавандовый Латте.">
+        </picture>
       </section>
     </main>
     <footer class="main-footer" data-test="footer">
