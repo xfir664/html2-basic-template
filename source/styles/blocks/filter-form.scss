@@ -1,0 +1,6 @@
+.filter-form {
+  @media (min-width: $width-desktop) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+}

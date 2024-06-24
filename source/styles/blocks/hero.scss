@@ -1,7 +1,62 @@
 .hero {
   position: relative;
-  padding: 20px;
-  padding-bottom: 60px;
+
+  &--slider--1 {
+    background-color: $bg-flat-white;
+  }
+
+  &-slider--2 {
+    background-color: $bg-latte;
+  }
+
+  &-slider--3 {
+    background-color: $bg-espresso;
+  }
+
+  @media (min-width: $width-tablet) {
+    &--slider--1 {
+      background-image: linear-gradient(180deg, $bg-flat-white 0, $bg-flat-white 640px, $base-white 640px);
+    }
+
+    &--slider--2 {
+      background-image: linear-gradient(180deg, $bg-latte 0, $bg-flat-white 640px, $base-white 640px);
+    }
+
+    &-slider--3 {
+      background-image: linear-gradient(180deg, $bg-espresso 0, $bg-flat-white 640px, $base-white 640px);
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    &--slider--1 {
+      background-image: none;
+    }
+
+    &--slider--2 {
+      background-image: none;
+    }
+
+    &--slider--3 {
+      background-image: none;
+    }
+  }
+}
+
+.hero__slider-button-container {
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  min-width: 100%;
+  height: 100%;
+  @media (min-width: $width-tablet) {
+    height: 640px;
+  }
+
+  @media (min-width: $width-desktop) {
+    min-width: 1440px;
+    max-width: 1440px;
+    height: 100%;
+  }
 }
 
 .hero__slide-button {
@@ -33,19 +88,60 @@
   right: 0;
   transform: rotateY(180deg);
  }
+
+ @media (min-width: $width-tablet) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 640px;
+ }
+
+ @media (min-width: $width-desktop) {
+  cursor: pointer;
+  height: 100%;
+ }
 }
 
 .hero__slider {
+  padding: 20px;
+  padding-bottom: 60px;
   display: none;
 
   &--active {
     display: flex;
     flex-direction: column;
   }
+
+  @media (min-width: $width-tablet) {
+
+    padding-top: 60px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 0;
+
+    &--active {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 105px;
+    padding-bottom: 84px;
+
+    &--active {
+      max-width: 1440px;
+      display: grid;
+      grid-template-columns: 600px 625px;
+      column-gap: 30px
+    }
+  }
 }
 
 .hero__title {
-  order: 0;
   text-align: center;
   margin: 0;
   margin-bottom: 4px;
@@ -53,4 +149,139 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $base-primary;
+
+  @media (min-width: $width-desktop) {
+    text-align: start;
+  }
+}
+
+.hero__slide-image {
+  display: block;
+  margin-bottom: 10px;
+
+  & img {
+    margin: 0;
+  }
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+  }
+}
+
+.hero__product-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 16px;
+    font-size: 56px;
+    line-height: 80px;
+  }
+
+  @media (min-width: $width-desktop) {
+    text-align: start;
+  }
+}
+
+.hero__product-description {
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $width-desktop) {
+    text-align: start;
+  }
+}
+
+.hero__price-container {
+  display: flex;
+  align-items: center;
+  min-width: 230px;
+  max-width: 230px;
+  margin: 0 auto;
+  margin-top: 20px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0;
+    margin-top: 40px;
+  }
+}
+
+.hero__old-price {
+  margin-right: 6px;
+  color: $base-primary;
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration: line-through;
+}
+
+.hero__new-price {
+  margin-right: auto;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.hero__byu-buuton {
+  text-align: center;
+  min-width: 113px;
+  padding: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-white;
+  background-color: $base-primary;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.hero__slider-pagination-list {
+  display: none;
+
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 60px;
+    display: flex;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.hero__slider-pagination-item {
+  padding: 10px 0;
+  display: flex;
+  cursor: pointer;
+}
+
+.hero__slide-pagination-button {
+  width: 62px;
+  height: 4px;
+  padding: 0;
+  background-color: $base-white;
+  border: none;
+  cursor: pointer;
+
+  &--active {
+    background-color: $base-primary;
+  }
 }
