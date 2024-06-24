@@ -1,0 +1,56 @@
+.hero {
+  position: relative;
+  padding: 20px;
+  padding-bottom: 60px;
+}
+
+.hero__slide-button {
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: $base-primary;
+    mask-image: url("../../icons/stack.svg#arrow");
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+ &-prev {
+  left: 0;
+ }
+
+ &-next {
+  right: 0;
+  transform: rotateY(180deg);
+ }
+}
+
+.hero__slider {
+  display: none;
+
+  &--active {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.hero__title {
+  order: 0;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $base-primary;
+}

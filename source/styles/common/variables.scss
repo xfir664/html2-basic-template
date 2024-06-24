@@ -1,1 +1,25 @@
 /* здесь используйте глобальные переменные */
+$width-mobile: 320px;
+$width-tablet: 768px;
+$width-desktop: 1440px;
+
+$padding-mobile: 0 20px;
+$padding-tablet: 0 20px;
+$padding-desktop: 0 40px;
+
+//colors
+$base-white: #ffffff;
+$base-grey: #bdbdbd;
+$base-black: #333333;
+$base-primary: #7859cf;
+$base-secondary: #f0ebff;
+
+$primary-opacity: rgba(120, 89, 207, 0.25);
+$primary-lightre: #9070ec;
+$primary-darker: #593cac;
+$light-grey: #e2e2e2;
+
+$bg-light-grey: #f8f8f8;
+$bg-flat-white: #f3ebe1;
+$bg-latte: #eae6fc;
+$bg-espresso: #e5e6e8;

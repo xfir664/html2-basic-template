@@ -11,69 +11,74 @@
   <body class="page__body">
     <header class="main-header" data-test="header">
       <nav class="main-navigation">
-        <a class="main-navigation__logo-link" href="#" aria-current="true">
-          <picture>
-            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/d2g-logo-long.svg" width="170" height="36">
-            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/d2g-logo-short.svg" width="82" height="36">
-            <img class="main-navigation__logo-image" src="images/logo/d2g-logo-icon.svg" width="32" height="36" alt="Логотип сайта.">
-          </picture>
-        </a>
-        <ul class="main-navigation__icon-list icon-list">
-          <li class="icon-list__item">
-            <a class="icon-list__link" href="#">
-              <span class="icon-list__link-text">
-                Войти
-              </span>
-            </a>
-          </li>
-          <li class="icon-list__item">
-            <a class="icon-list__link" href="#">
-              <span class="icon-list__link-text">
-                Корзина
-              </span>
-            </a>
-          </li>
-        </ul>
-        <button class="main-navigation__burger-button js-toggle-button">
-          <span class="visually-hidden">
-            Открыть меню
-          </span>
-        </button>
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--current" href="#">
-              Главная
-            </a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">
-              Каталог
-            </a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">
-              Доставка
-            </a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">
-              О нас
-            </a>
-          </li>
-        </ul>
+        <div class="main-navigation__container">
+          <a class="main-navigation__logo-link" href="#" aria-current="true">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/d2g-logo-long.svg" width="170" height="36">
+              <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/d2g-logo-short.svg" width="82" height="36">
+              <img class="main-navigation__logo-image" src="images/logo/d2g-logo-icon.svg" width="32" height="36" alt="Логотип сайта.">
+            </picture>
+          </a>
+          <p class="main-navigation__site-text">
+            Интернет-магазин кофейных напитков
+          </p>
+          <ul class="main-navigation__list main-navigation__list--no-js">
+            <li class="main-navigation__item">
+              <a class="main-navigation__link main-navigation__link--current" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#">
+                Каталог
+              </a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#">
+                Доставка
+              </a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#">
+                О нас
+              </a>
+            </li>
+          </ul>
+          <ul class="main-navigation__icon-list">
+            <li class="main-navigation__icon-item">
+              <a class="main-navigation__icon-link main-navigation__icon-link--singin" href="#">
+                <span class="main-navigation__icon-link-text">
+                  Войти
+                </span>
+              </a>
+            </li>
+            <li class="main-navigation__icon-item">
+              <a class="main-navigation__icon-link main-navigation__icon-link--cart" href="#">
+                <span class="main-navigation__icon-link-text">
+                  Корзина
+                </span>
+              </a>
+            </li>
+          </ul>
+          <button class="main-navigation__burger-button js-toggle-button">
+            <span class="visually-hidden">
+              Открыть меню
+            </span>
+          </button>
+        </div>
       </nav>
     </header>
     <main class="main-content">
       <h1 class="visually-hidden">Главная страница сайта Drink 2 go.</h1>
       <section class="hero" data-test="hero">
-        <button class="hero__slide-button-prev" type="button">
+        <button class="hero__slide-button hero__slide-button-prev slide-button-prev" type="button">
           <span class="visually-hidden">Предыдущий слайд</span>
         </button>
-        <button class="hero__slide-button-next" type="button">
+        <button class="hero__slide-button hero__slide-button-next slide-button-next" type="button">
           <span class="visually-hidden">Следующий слайд</span>
         </button>
-        <section class="hero__slider hero__slide-1">
-          <h2 class="hero__title">Новинка</h2>
+        <section class="hero__slider hero__slide-1 hero__slider--active">
+          <h2 class="hero__title">Новинка!</h2>
           <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="images/hero-slider/slide-1-desktop@1x.webp, images/hero-slider/slide-1-desktop@2x.webp 2x" width="600" height="600">
             <source type="image/webp" media="(min-width: 768px)" srcset="images/hero-slider/slide-1-tablet@1x.webp, images/hero-slider/slide-1-tablet@2x.webp 2x" width="476" height="476">
@@ -92,7 +97,7 @@
           </p>
         </section>
         <section class="hero__slider hero__slide-2">
-          <h2 class="hero__title">Новинка</h2>
+          <h2 class="hero__title">Новинка!</h2>
           <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="images/hero-slider/slide-2-desktop@1x.webp, images/hero-slider/slide-2-desktop@2x.webp 2x" width="600" height="600">
             <source type="image/webp" media="(min-width: 768px)" srcset="images/hero-slider/slide-2-tablet@1x.webp, images/hero-slider/slide-2-tablet@2x.webp 2x" width="476" height="476">
@@ -111,7 +116,7 @@
           </p>
         </section>
         <section class="hero__slider hero__slide-3">
-          <h2 class="hero__title">Новинка</h2>
+          <h2 class="hero__title">Новинка!</h2>
           <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="images/hero-slider/slide-3-desktop@1x.webp, images/hero-slider/slide-3-desktop@2x.webp 2x" width="600" height="600">
             <source type="image/webp" media="(min-width: 768px)" srcset="images/hero-slider/slide-3-tablet@1x.webp, images/hero-slider/slide-3-tablet@2x.webp 2x" width="476" height="476">
@@ -371,10 +376,10 @@
     </main>
     <footer class="main-footer" data-test="footer">
       <a class="main-footer__logo-link" href="#" aria-current="true">
-        <img class="main-footer__logo-image" src="#" width="32" height="36" alt="Логотип Drink 2 go." aria-hidden="true">
-        <span class="visually-hidden" aria-hidden="true">
-          Логотип сайта Drink 2 go.
-        </span>
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/d2g-logo-long.svg" width="170" height="36">
+          <img class="main-footer__logo-image" src="images/logo/d2g-logo-short.svg" width="82" height="36" alt="Логотип сайта.">
+        </picture>
       </a>
       <ul class="main-footer__social-list">
         <li class="main-footer__social-item">
@@ -429,7 +434,12 @@
         <address class="main-footer__adress">Санкт-Петербург, набережная реки Карповки, дом 5</address>
         <a class="main-footer__contact-telephone" href="tel:+79999999999">+7 (999) 999-99-99</a>
       </p>
-      <p class="main-footer__copyright">Разработано в <a class="main-footer__copyright-link" href="#">HTML Academy</a></p>
+      <p class="main-footer__copyright">
+        <a class="main-footer__copyright-link" href="#">
+          Разработано в <strong>HTML Academy</strong>
+          <img class="main-footer__copyright-image" src="images/logo/html-academy-logo.svg" alt="Логотип HTML Academy" width="12" height="16">
+        </a>
+      </p>
     </footer>
   </body>
 </html>
